@@ -1,0 +1,26 @@
+.App {
+    max-width: 1166px;
+    margin: auto;
+    padding: 30px 50px;
+}
+
+.appHeader {
+    font-size: 42px;
+    color: #4C5A79;
+}
+
+@media screen and (max-width: 768px) {
+    .App {
+        padding: 30px 45px;
+    }
+}
+
+@media screen and (max-width: 377px) {
+    .App {
+        padding: 12px 12px;
+    }
+
+    .appHeader {
+        font-size: 35px;
+    }
+}

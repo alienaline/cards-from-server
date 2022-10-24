@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Houschka Pro";
+    src: url("./HouschkaPro-Medium.woff2") format("woff2"), 
+        url("./HouschkaPro-Medium.woff") format("woff");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Houschka Pro";
+    src: url("./HouschkaPro-Bold.woff2") format("woff2"), 
+        url("./HouschkaPro-Bold.woff") format("woff");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Houschka Pro";
+    src: url("./HouschkaPro-ExtraBold.woff2") format("woff2"), 
+        url("./HouschkaPro-ExtraBold.woff") format("woff");
+    font-weight: 800;
+}

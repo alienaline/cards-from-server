@@ -1,0 +1,35 @@
+.searchContainer {
+    margin: 30px 0;
+}
+
+.fieldset {
+    border-radius: 4px;
+    background-color: #F0F4FC;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input {
+    background-color: inherit;
+    border: none;
+    color: #4C5A79;
+    font-size: 18px;
+    font-family: 'Houschka Pro';
+    padding: 10px 5px;
+}
+
+.icon {
+    color: #0066B3;
+    transform: scaleX(-1);
+    height: 18px;
+    width: 18px;
+    margin: 10px 5px;
+}
+
+@media screen and (max-width: 377px) {
+    .input {
+        font-size: 15px;
+    }
+    
+}
