@@ -3,7 +3,7 @@
 
 body {
   margin: 0;
-  font-family: 'Futura PT', 'Houschka Pro', sans-serif;
+  font-family: 'Houschka Pro', 'Futura PT', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -18,4 +18,12 @@ code {
   outline: none;
   text-decoration: none;
   border: none;
+}
+
+input,
+button,
+a {
+  cursor: pointer;
+  list-style: none;
+  text-decoration: none;
 }

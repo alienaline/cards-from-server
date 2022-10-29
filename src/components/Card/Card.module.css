@@ -1,9 +1,9 @@
 .card {
     width: 100%;
     height: 400px;
-    background-color: beige;
     border-radius: 4px;
     position: relative;
+    background-color: bisque;
 }
 
 .img {
@@ -17,9 +17,30 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 0;
-    background: linear-gradient(0deg, #4C5A79 0%, rgba(76, 90, 121, 0) 100%);
+    bottom: 0;
+    background-image: linear-gradient(0deg, #4C5A79 0%, rgba(76, 90, 121, 0) 50%);
     border-radius: 4px;
+}
+
+.textContainer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(0deg, #4C5A79 0%, rgba(76, 90, 121, 0.75) 100%);
+    border-radius: 4px;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+}
+
+.textContainer:hover::after {
+    opacity: 1;
+}
+
+.textContainer:active {
+    box-shadow: inset 0px 3px 4px rgba(0, 0, 0, 0.2);
 }
 
 .cardText {
@@ -28,23 +49,34 @@
     position: absolute;
     bottom: 0;
     margin: 25px 30px;
+    min-height: 201px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1;
 }
 
-.series {
+.description {
+    margin: 56px 0 0 0;
+}
+
+.jobTitle {
     font-size: 15px;
     background-color: #0066B3;
     padding: 2px 10px;
     border-radius: 2px;
 }
 
-.title,
-.cost {
+.fullName,
+.rating {
     font-size: 18px;
     font-weight: 800;
+    line-height: 25px;
+    text-transform: uppercase;
 }
 
-.title {
-    margin: 15px 0 30px 0;
+.fullName {
+    margin: 15px 0 15px 0;
 }
 
 
