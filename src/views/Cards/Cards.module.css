@@ -1,7 +1,7 @@
 .sortPanel {
     margin: 15px 0;
     font-family: 'Houschka Pro', sans-serif;
-    color: #4C5A79;
+    color: var(--dark-grey);
     font-weight: 500;
     font-size: 15px;
     line-height: 19px;
@@ -14,13 +14,13 @@
 }
 
 .sortHeader {
-    color: #9DB0BF;
+    color: var(--light-grey);
 }
 
 .sortButton {
     background-color: inherit;
-    color: #0066B3;
-    border-bottom: 1px dashed #0066B3;
+    color: var(--blue);
+    border-bottom: 1px dashed var(--blue);
     padding: 0;
     margin-left: 15px;
 }
@@ -31,18 +31,18 @@
 }
 
 .sortButton:hover {
-    color: #EB3737;
-    border-bottom: 1px dashed #EB3737;
+    color: var(--sort-btn);
+    border-bottom: 1px dashed var(--sort-btn);
 }
 
 .sortButton:active {
-    color: #C52020;
+    color: var(--sort-btn_active);
     border-bottom: none;
 }
 
 .sortButton[data-state='active'] {
     border-bottom: none;
-    color: #4C5A79;
+    color: var(--dark-grey);
 }
 
 .sortButton[data-state='active'] > img {
@@ -64,28 +64,36 @@
     font-weight: 700;
     font-size: 18px;
     margin: 45px 20px;
+    padding: 0;
 }
 
 .pageNum {
     padding: 15px 20px;
     border-radius: 3px;
-    background-color: #F0F4FC;
-    color: #0066B3;
+    background-color: var(--fieldset-bg);
+    color: var(--blue);
     transition: all 0.5s ease;
 }
 
 .pageNum:hover {
-    background-color: #E2E8F3;
+    background-color: var(--fieldset-hover);
 }
 
 .pageNum:active {
-    background: #E2E8F3;
+    background: var(--fieldset-hover);
     box-shadow: inset 0px 3px 4px rgba(0, 0, 0, 0.2);
 }
 
 .active {
-    background: #4C5A79;
-    color: white;
+    background: var(--dark-grey);
+    color: var(--white);
+}
+
+.disabled,
+.disabled:hover,
+.disabled:active {
+    background-color: var(--white);
+    box-shadow: none;
 }
 
 @media (min-width: 0px) and (max-width: 376px) {
@@ -94,11 +102,27 @@
         gap: 10px;
     }
 
+    .pageNum {
+        padding: 10px 15px;
+    }
+
+    .pagination {
+        gap: 5px;
+    }
 }
 
 @media (min-width: 376px) and (max-width: 578px) {
     .cards {
         grid-template-columns: auto;
+    }
+
+    .pageNum {
+        padding: 10px 15px;
+    }
+
+    .pagination {
+        margin: 45px 10px;
+        gap: 5px;
     }
 }
 

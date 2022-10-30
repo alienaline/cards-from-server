@@ -75,10 +75,9 @@ function Cards(props) {
                 }
             </div>
             <ReactPaginate
-                breakLabel="..."
                 nextLabel={<img src={rightIcon} />}
                 onPageChange={handlePageClick}
-                pageRangeDisplayed={3}
+                pageRangeDisplayed={1}
                 marginPagesDisplayed={2}
                 pageCount={pageCount}
                 previousLabel={<img src={leftIcon} />}
@@ -87,7 +86,8 @@ function Cards(props) {
                 pageLinkClassName={CardsStyles.pageNum}
                 previousLinkClassName={`${CardsStyles.pageNum} ${CardsStyles.prevButton}`}
                 nextLinkClassName={`${CardsStyles.pageNum} ${CardsStyles.nextButton}`}
-                activeLinkClassName={CardsStyles.active} />
+                activeLinkClassName={CardsStyles.active}
+                disabledLinkClassName={CardsStyles.disabled} />
         </>
     );
 }

@@ -1,6 +1,18 @@
 @import url('./assets/fonts/FuturaPt/index.css');
 @import url('./assets/fonts/HouschkaPro/index.css');
 
+:root {
+  --blue: #0066B3;
+  --dark-grey: #4C5A79;
+  --light-grey: #9DB0BF;
+  --white: #FFFFFF;
+  --sort-btn: #EB3737;
+  --sort-btn_active: #C52020;
+  --cards-bg: bisque;
+  --fieldset-bg: #F0F4FC;
+  --fieldset-hover: #E2E8F3; 
+}
+
 body {
   margin: 0;
   font-family: 'Houschka Pro', 'Futura PT', sans-serif;

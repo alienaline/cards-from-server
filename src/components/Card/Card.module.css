@@ -3,7 +3,7 @@
     height: 400px;
     border-radius: 4px;
     position: relative;
-    background-color: bisque;
+    background-color: var(--cards-bg);
 }
 
 .img {
@@ -18,7 +18,7 @@
     height: 100%;
     position: absolute;
     bottom: 0;
-    background-image: linear-gradient(0deg, #4C5A79 0%, rgba(76, 90, 121, 0) 50%);
+    background-image: linear-gradient(0deg, var(--dark-grey) 0%, rgba(76, 90, 121, 0) 50%);
     border-radius: 4px;
 }
 
@@ -29,7 +29,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: linear-gradient(0deg, #4C5A79 0%, rgba(76, 90, 121, 0.75) 100%);
+    background-image: linear-gradient(0deg, var(--dark-grey) 0%, rgba(76, 90, 121, 0.75) 100%);
     border-radius: 4px;
     transition: opacity 0.5s linear;
     opacity: 0;
@@ -44,7 +44,7 @@
 }
 
 .cardText {
-    color: white;
+    color: var(--white);
     font-family: 'Houschka Pro', sans-serif;
     position: absolute;
     bottom: 0;
@@ -62,7 +62,7 @@
 
 .jobTitle {
     font-size: 15px;
-    background-color: #0066B3;
+    background-color: var(--blue);
     padding: 2px 10px;
     border-radius: 2px;
 }

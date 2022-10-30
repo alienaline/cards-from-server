@@ -5,13 +5,12 @@
 .fieldset {
     position: relative;
     border-radius: 4px;
-    background-color: #F0F4FC;
-
+    background-color: var(--fieldset-bg);
     padding: 0;
 }
 
 .fieldset:hover {
-    background-color: #E2E8F3;
+    background-color: var(--fieldset-hover);
 }
 
 .fieldset:active,
@@ -25,8 +24,8 @@
     top: 0;
     margin: 0 18px;
     padding: 3px 4px;
-    color: #4C5A79;
-    background-color: #E2E8F3;
+    color: var(--dark-grey);
+    background-color: var(--fieldset-hover);
     border-radius: 0px 0px 2px 2px;
     font-weight: 500;
     font-size: 13px;
@@ -46,7 +45,7 @@
 .input {
     background-color: inherit;
     border: none;
-    color: #4C5A79;
+    color: var(--dark-grey);
     font-size: 18px;
     font-family: 'Houschka Pro';
     margin: 18px 18px;
